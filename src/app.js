@@ -1,10 +1,10 @@
-const express = require("express");
+const express = require("express")
 
-const app = express();
+const app = express()
 
-const movieControllers = require("./controllers/movieControllers");
+const userControllers = require("./controllers/userControllers")
 
-app.get("/api/movies", movieControllers.getMovies);
-app.get("/api/movies/:id", movieControllers.getMovieById);
+app.get("/api/movies", userControllers.getUsers)
+app.get("/api/movies/:id", userControllers.getUserById)
 
-module.exports = app;
+module.exports = app
